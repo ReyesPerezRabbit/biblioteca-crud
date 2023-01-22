@@ -79,11 +79,17 @@ WSGI_APPLICATION = 'BibliotecaCrud.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default' : dj_database_url.config(
-default='postgressql://postgres:postgres@localhost/postgres',
-coon_max_age=600
-    )
+  
+    #Conexxion a la base de datos de Postgres
+   'default': {
+		'ENGINE': 'django.db.backends.postgresql_psycopg2',
+		'NAME' : 'db_Biblioteca',
+		'USER' : 'postgres',
+		'PASSWORD' : 'admin',
+		'HOST' : 'localhost' ,
+		'PORT' : '' 
     }
+}
 
 
 
