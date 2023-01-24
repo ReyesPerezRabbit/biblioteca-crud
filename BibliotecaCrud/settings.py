@@ -83,11 +83,13 @@ DATABASES = {
     #Conexxion a la base de datos de Postgres
    'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		'NAME' : 'db_Biblioteca',
+		'NAME' : 'db_crud',
 		'USER' : 'postgres',
 		'PASSWORD' : 'admin',
 		'HOST' : 'localhost' ,
 		'PORT' : '' 
+
+        #Base de datos en rama de Erick 
     }
 }
 
