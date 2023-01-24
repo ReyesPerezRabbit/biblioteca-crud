@@ -84,7 +84,7 @@ DATABASES = {
 		'NAME' : 'biblioteca',
 		'USER' : 'postgres',
 		'PASSWORD' : 'admin',
-		'HOST' : 'localhost' ,
+		'HOST' : 'localhost' ,  # la base esta descargado de la rama master 
 		'PORT' : '' 
     }
 }
