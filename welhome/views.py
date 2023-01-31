@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
+from django.contrib.auth.decorators import login_required
 
 
 # vistas en la pagina
@@ -38,9 +39,9 @@ def well_signup(request):
 
 
 def well_tasks(request):
-    return render(request, 'well_tasks.html')
+     return render(request, 'well_tasks.html')
 
-
+@login_required
 def well_signout(request):
     logout(request)
     return redirect('well_home')

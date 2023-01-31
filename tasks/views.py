@@ -45,30 +45,6 @@ def tasks(request):
 
     return render(request, 'tasks.html',{'Tasks':tasks})
 
-@login_required
-def create_task(request):
-
-    if request.method == 'GET':
-        return render(request, 'create_task.html',{
-        'form': TaskForm
-    })
-    else:
-        try:
-            form = TaskForm(request.POST)
-            new_task = form.save(commit=False)
-            new_task.user = request.user
-            new_task.save()
-            return redirect('tasks')
-        except  ValueError:
-            return render(request, 'create_task.html',{
-            'form': TaskForm,
-            'error' : 'Pof favor ingresa un dato valido'
-            })
-        
-
-def task_detail(request,task_id):
-    task = Tasks.objects.get(pk=task_id)
-    return render(request, 'task_detail.html',{'task':task})      
 
 @login_required
 def signout(request):
