@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tasks',
-    'blog',
-    'portafolio'
+    'blogs',
+    'portafolio',
     
 ]
 
@@ -86,7 +86,7 @@ DATABASES = {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
 		'NAME' : 'db_prueba',
 		'USER' : 'postgres',
-		'PASSWORD' : 'admin',
+		'PASSWORD' : '1234',
 		'HOST' : 'localhost' ,  # la base esta descargado de la rama master 
 		'PORT' : '' 
     }
