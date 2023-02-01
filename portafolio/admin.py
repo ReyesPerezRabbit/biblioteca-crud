@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Porject
+from .models import Project
 # Register your models here.
 
-admin.site.register(Porject)
+admin.site.register(Project) 
