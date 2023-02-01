@@ -84,7 +84,7 @@ DATABASES = {
     #Conexxion a la base de datos de Postgres
    'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		'NAME' : 'db_prueba',
+		'NAME' : 'db_sisbibli',
 		'USER' : 'postgres',
 		'PASSWORD' : 'admin',
 		'HOST' : 'localhost' ,  # la base esta descargado de la rama master 
