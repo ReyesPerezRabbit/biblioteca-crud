@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tasks',
     'blog',
-    'porfolio'
+    'portafolio'
+    
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,7 @@ DATABASES = {
     #Conexxion a la base de datos de Postgres
    'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		'NAME' : 'biblioteca',
+		'NAME' : 'db_prueba',
 		'USER' : 'postgres',
 		'PASSWORD' : 'admin',
 		'HOST' : 'localhost' ,  # la base esta descargado de la rama master 
@@ -128,7 +129,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-LOGIN_URL = '/signin'
+#LOGIN_URL = '/signin'
+
+MEDIA_ROOT = BASE_DIR / 'media'
+
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
