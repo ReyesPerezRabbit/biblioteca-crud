@@ -83,9 +83,9 @@ DATABASES = {
     #Conexxion a la base de datos de Postgres
    'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		'NAME' : 'biblioteca',
+		'NAME' : 'db_crud',
 		'USER' : 'postgres',
-		'PASSWORD' : 'admin',
+		'PASSWORD' : '203097',
 		'HOST' : 'localhost' ,  # la base esta descargado de la rama master 
 		'PORT' : '' 
     }
